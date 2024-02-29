@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 2. Escreva um script para ler o número total de eleitores de um município, o
+número de votos brancos, nulos e válidos. Calcular e escrever o percentual que
+cada um representa em relação ao total de eleitores.
+a. Bônus: A soma dos números não pode passar o total de eleitores. -->
+
+    <script>
+
+        const total = Number(prompt('Digite a quantidade total de eleitores'))
+        const brancos = Number(prompt('Digite a quantidade brancos'))
+        const nulos = Number(prompt('Digite a quantidade nulos'))
+        const validos = Number(prompt('Digite a quantidade validos'))
+
+
+        const soma = brancos + nulos + validos
+
+        if (soma > total) {
+            console.log("Erro: A soma dos votos não pode passar o total de eleitores")
+        } else {
+            const percBranco = brancos / total * 100
+            const percNulos = nulos / total * 100
+            const percValidos = validos / total * 100
+
+            console.log("Brancos: " + percBranco);
+            console.log("Nulos: " + percNulos);
+            console.log("Brancos: " + percValidos);
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
