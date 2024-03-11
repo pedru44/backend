@@ -10,17 +10,13 @@
 percentual de reajuste. Calcular e escrever o valor do novo salário. -->
     <script>
 
-        const atual = Number(prompt('Digite o valor do salário'))
-        const novo = Number(prompt('Digite o valor do percentual'))
 
-        const salario = atual + novo / 100
+        const salario = Number(prompt('Digite o valor do seu salário mensal: '));
+        const percentual = Number(prompt('Digite o valor do percentual de reajuste: '));
+        const ganho = (percentual / 100) * salario
+        const novoSalario = salario + ganho
 
-        /* const percAtual = atual * 100
-        const percNovo = novo * 100 */
-
-        console.log("atual: " + percAtual);
-        console.log("novo: " + percNovo);
-
+        console.log('O novo salário é de: ' + novoSalario)
 
 
     </script>
